@@ -142,3 +142,6 @@ const generateRandomNum = (min, max) => {
     );
     console.log(`${player1.name}'s life is now ${ufoAttack}`);
   };
+
+  object.onclick = function(){functionToExecute};
+  object.addEventListener("Attack", functionToExecute);
