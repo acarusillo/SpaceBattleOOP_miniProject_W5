@@ -4,7 +4,9 @@
 body {
     background: aliceblue;
     display: block;
-    cursor: crosshair;
+    cursor:url(https://cdn.dribbble.com/users/645860/screenshots/3280967/space-gun.gif), auto;
+    background-image: url("https://usagif.com/wp-content/uploads/gif/outerspace-77.gif");
+    <button class="btn">Click Me</button>
 }
 .gameboard{
     border:solid black;
@@ -17,17 +19,19 @@ body {
 .controller{
     border:solid navy;
     height:150px;
+    
 }
-.playerOne{
+.player{
     border:solid blue;
     display: flex;
     justify-content: flex-start;
     
 }
-.playerTwo{
+.invader{
     border:solid red;
     display: flex;
     justify-content: flex-end;
+    
 }
 .animation{
     animation: something 3s ease-in infinite;

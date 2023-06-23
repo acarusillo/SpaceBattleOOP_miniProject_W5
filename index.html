@@ -9,24 +9,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
+    <style>
+        canvas {
+            border: 1px solid red;
+            background-color: lightblue;
+        }
+        </style>
     <body>
         
         <!-- gameboard -->
         <div class="gameboard">
-            <div class="playerOne">
+            <div class="player">
                 <img src="https://media3.giphy.com/media/sGBMzyeEzKpySD74qv/200w.gif?cid=82a1493bip3iklyggsfeg68j15zsu16dqstbvqh7rgu423nz&ep=v1_gifs_related&rid=200w.gif&ct=g" alt="" class="spaceShip">
-                <div class="healthbar"> Health: <span class="hp"></span> </div>
-                <button onclick="functionToExecute()">Attack</button>
+                <div class="scoreBoard"> Score: <span class="hp"></span> </div>
+                <button onclick="functionToExecute()">Shoot</button>
             </div>
-            <div class="playerTwo">
+            <div class="invader">
                 <img src="https://media0.giphy.com/media/S3bZdGN7y2MQyNgPF1/giphy.gif" alt="" class="hp"></span> </div>
-                <div class="healthbar"> Health: <span class="hp"></span> </div>
-                <button onclick="functionToExecute()">Attack</button>
+                <div class="scoreBoard"> Score: <span class="hp"></span> </div>
+                <button onclick="functionToExecute()">Shoot</button>
             </div>
         </div>
         <hr>
         <div class="controller">
-            <button onclick="(startRound(currentAlien))">Start Round</button>
+            <button onclick="(playGame(invader))">Play Game</button>
+        
         </div>
         <!-- gameController -->
         
